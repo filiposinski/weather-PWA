@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+html {
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    background: rgb(34, 193, 195);
+    background: linear-gradient( 344deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.header {
+    font-family: Roboto;
+    color: white;
+    font-size: 30px;
+}
