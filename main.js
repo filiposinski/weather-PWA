@@ -1,3 +1,5 @@
+import { token } from './token.js';
+
 const weather = document.querySelector('.weather--js');
 const icon = document.querySelector('.icon--js');
 
@@ -12,7 +14,7 @@ function geo() {
             console.log(position.coords.longitude);
             lat = position.coords.latitude
             lon = position.coords.longitude
-            fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=a8bffd82cbb2a3a0f6ba72f99afbb2f3`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${token}`)
                 .then(resp => resp.json())
                 .then(resp => {
                     console.log(resp);
@@ -28,6 +30,3 @@ function geo() {
 
 }
 geo();
-
-
-//fetch('https://api.openweathermap.org/data/2.5/weather?q=Poznan&units=metric&appid=a8bffd82cbb2a3a0f6ba72f99afbb2f3')
